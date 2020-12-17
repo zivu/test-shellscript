@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+      server:
+        token: roottoken
+        vault:
+          host: localhost
+          port: 8200
+          scheme: http
+          order: 1
+  profiles:
+    active:
+      - vault
